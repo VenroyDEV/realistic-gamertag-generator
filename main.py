@@ -9,7 +9,7 @@ window_open_call = False
 
 root = Tk()
 root.geometry("600x600")
-root.title("Legit Gamertag Generator")
+root.title("Realistic Gamertag Generator")
 icon = PhotoImage(file='imgbin_t-shirt-elliot-alderson-angela-moss-clothing-png.png')
 root.iconphoto(True, icon)
 root.config(background="black")
@@ -30,7 +30,7 @@ def namegeneration():
         username_list = file.read().splitlines()
         name_selection = random.choice(username_list)
         name_history.append(name_selection)
-        # print(name_selection)
+        #print(name_selection)
         label.config(text=name_selection)
 
 
